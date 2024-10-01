@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Position CSS</title>
+        <link rel="stylesheet" type="text/css" href="stylePosition.css">
+    </head>
+
+    <body>
+        <h2>position: static;</h2>
+
+        <p>Position static digunakan untuk mengatur element menjadi status secara default.
+            Elemen akan mengikuti posisi normal secara default, elemen tidak dipengaruhi oleh properti spt top botom left right
+            </p>
+
+        <div class="static">
+            Elemen ini diatur menggunakan posisi: static;
+        </div>
+        <br><br><br><br>
+        <h2>position: relative;</h2>
+
+        <p>Sebuah element HTML yang menggunakan position relative akan terletak pada posisi normal.
+            Mengatur properti atas, kanan, bawah, dan kiri dari elemen yang diposisikan dengan "relatif"
+            akan membuatnya jauh dari posisi normalnya.
+            Konten lain tidak akan disesuaikan agar sesuai dengan celah yang ditinggalkan oleh elemen tersebut</p>
+        <div class="fixed">
+            Elemen ini diatur menggunakan posisi: fixed;
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <h2>position: absolute;</h2>
+        <p>Element HTML yang menggunakan position absolute akan diposisikan relatif dengan
+            element lain yang mendahuluinya yang terdekat,
+            bukan relatif terhadap layar secara normal .</p>
+        <div class="relative1">Elemen ini diatur menggunakan posisi: relative;
+            <div class="absolute"> Elemen ini diatur menggunakan posisi: absolute;</div>
+        </div>
+        <br><br><br>
+        <br><br><br>
+
+        <h2>position: sticky;</h2>
+        <p>Cobalajh untuk<b>scroll</b>untuk mengetahui bagaimana posisi stickt bekerja</p>
+        <p>Catatan: IE/Edge 15 dan versi yang lebih lama tidak mendukung sticky.</p>
+
+        <div class="sticky">Hola aku adalah sticky!</div>
+
+        <div syle="padding-bottom:2000px">
+            <p>Dalam contoh ini elemen sticky menempel pada posisi paling atas halaman (top:0),ketika 
+                mencapai posisi scrollnya
+            </p>
+            <p>coba scroll.</p>
+            <p>coba scroll Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor quo distinctio ratione deserunt illum blanditiis velit reprehenderit, ducimus natus et sequi repellat eum dolorum debitis nostrum perspiciatis temporibus? Optio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati officiis voluptatibus saepe. Obcaecati, iste! Sit, nisi ipsum sunt dignissimos molestias blanditiis consequuntur distinctio magni eligendi ratione quia placeat illo.
+            </p>
+            <p>coba scroll Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis perspiciatis voluptatem deserunt nesciunt quo, officia nihil amet a? Architecto et aspernatur maxime. Vitae, voluptatum? Odit quisquam maxime adipisci iure?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugit recusandae at consectetur fuga voluptatum cumque. Officiis repellendus, ipsa consequatur, odit provident laborum qui nam suscipit vel nesciunt neque optio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci voluptatibus, cum harum accusantium enim temporibus omnis optio explicabo debitis ut sapiente vero labore dolorum! Labore sit quidem voluptatem obcaecati!
+            </p>
+
+        </div>
+        </body>
+</html>
