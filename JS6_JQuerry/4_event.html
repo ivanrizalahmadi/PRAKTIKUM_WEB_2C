@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #paragraf {
+            width: 600px;
+            height: 80px;
+            background-color: pink;
+            line-height: 80px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Event ketika mouseover
+            $("#paragraf").mouseover(function() {
+                $("#paragraf").css("background-color", "silver");
+            });
+            
+            // Event ketika mouseout
+            $("#paragraf").mouseout(function() {
+                $("#paragraf").css("background-color", "blue");
+            });
+            
+            // Event ketika klik ganda (dblclick)
+            $("#paragraf").dblclick(function() {
+                $("#paragraf").css("border", "solid 3px black");
+            });
+            
+            // Event ketika klik biasa
+            $("#paragraf").click(function() {
+                $("#paragraf").css("color", "white");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="paragraf">Praktikum Minggu ke-4 JQuery</p>
+</body>
+</html>
