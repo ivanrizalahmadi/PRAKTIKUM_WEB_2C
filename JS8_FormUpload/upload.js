@@ -1,8 +1,15 @@
 $(document).ready(function() {
-    $('#upload-form').submit(function(e) {
-        e.preventDefault(); // Mencegah pengunggahan tradisional
+    $('#file').change(function() {
+        if (this.files.length > 0) {
+            $('#upload-button').prop('disabled', false).css('opacity', 1);
+        } else {
+            $('#upload-button').prop('disabled', true).css('opacity', 0.5);
+        }
+    });
 
-        var formData = new FormData(this); // Mengambil semua data dari form
+    $('#upload-form').submit(function(e) {
+        e.preventDefault();
+        var formData = new FormData(this);
 
         $.ajax({
             type: 'POST',
@@ -12,10 +19,10 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(response) {
-                $('#status').html(response); // Menampilkan respons sukses
+                $('#status').html(response);
             },
             error: function() {
-                $('#status').html('Terjadi kesalahan saat mengunggah file.'); // Menampilkan pesan kesalahan
+                $('#status').html('Terjadi kesalahan saat mengunggah file.');
             }
         });
     });
