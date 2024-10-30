@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Web Statis Bootstrap</title>
+    <!-- Menyisipkan Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menyisipkan Custom CSS -->
+    <style>
+        .img-zoom:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        .testimonial {
+            background: #29ea36;
+            padding: 2rem 1rem;
+            border-radius: 10px;
+        }
+    </style>
+    <!-- Menyisipkan Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">Wisata</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-success">Home</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-warning">About</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-danger">Gallery</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-info">Testimonial</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- Jumbotron -->
+<div class="jumbotron text-center" style="background-image: url('hero.jpg'); background-size: cover; color: rgb(51, 148, 54); background-color: rgba(62, 185, 56, 0.5);">
+    <h1 style="color: #fdf4f4; font-weight: bold;">Explore Nature</h1>
+    <p style="color: #f9efef;">Discover the beauty of the natural world with us</p>
+    <a href="#" class="btn btn-light btn-lg">Learn More</a>
+</div>
+
+
+<!-- Image Gallery -->
+<div class="container">
+    <h2 class="text-center mb-4">Destinasi Wisata</h2>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="wisata1.jpeg" class="img-fluid img-zoom mb-3" alt="Nature Image 1">
+            <h1 style="color: #170404; font-weight: bold; font-size: medium;">Bali "Bedugul"</h1>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="wisata2.jpeg" class="img-fluid img-zoom mb-3" alt="Nature Image 2">
+            <h1 style="color: #170404; font-weight: bold; font-size: medium;">Papua "Raja Ampat"</h1>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="wisata3.jpeg" class="img-fluid img-zoom mb-3" alt="Nature Image 3">
+            <h1 style="color: #170404; font-weight: bold; font-size: medium;">Malang "Gunung Bromo"</h1>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Testimonials -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Testimoni</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="testimonial">
+                    <h5>Ivan Rizal</h5>
+                    <p>"Website nya sangat bagus sekali , dan juga ini sangat membantu saya dalam mencari wisata-wisata yang ada di Indonesia."</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="testimonial">
+                    <h5>Riyan</h5>
+                    <p>"Saya sangat merekomendasikan untuk mencari paket wisata menggunakan web ini! sangat fun dan interkatif sekaliiii!!!!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-light text-center py-3 mt-4">
+        <p>&copy; 2024 Explore Nature. All rights reserved.</p>
+    </footer>
+</body>
+</html>
