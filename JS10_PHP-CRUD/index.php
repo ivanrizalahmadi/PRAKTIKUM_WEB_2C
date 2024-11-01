@@ -21,14 +21,15 @@
             echo "<table>";
             echo "<tr><th>No</th><th>Nama</th><th>Jenis Kelamin</th><th>Alamat</th><th>No. Telp</th><th>Aksi</th></tr>";
             
-            while ($row = mysqli_fetch_array($result)) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                // Pastikan untuk memeriksa apakah 'no_telp' ada di array
                 $kelamin = ($row["jenis_kelamin"] === 'Laki-laki') ? 'Laki-laki' : 'Perempuan';
                 echo "<tr>
                         <td>" . $no++ . "</td>
                         <td>" . $row["nama"] . "</td>
                         <td>" . $kelamin . "</td>
                         <td>" . $row["alamat"] . "</td>
-                        <td>" . $row["No_telp"] . "</td>
+                        <td>" . (isset($row["no_telp"]) ? $row["no_telp"] : 'Data tidak tersedia') . "</td>
                         <td><a href='edit.php?id=" . $row["id"] . "'>Edit</a> | 
                             <a href='#' onclick='konfirmasiHapus(" . $row["id"] . ", \"" . $row["nama"] . "\")'>Hapus</a></td>
                       </tr>";
@@ -51,4 +52,4 @@
     }
     </script>
 </body>
-</html>
+</html>  
