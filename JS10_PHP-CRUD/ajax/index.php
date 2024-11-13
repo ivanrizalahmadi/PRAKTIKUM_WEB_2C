@@ -22,7 +22,7 @@
             <div class="form-group">
                 <label for="jenis_kelamin">Jenis Kelamin:</label>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input" name="jenis_kelamin" value="L" id="jenkel1" required>
+                    <input type="radio" class="form-check-input" name="jenis_kelamin" value="Laki-" id="jenkel1" required>
                     <label class="form-check-label" for="jenkel1">Laki-laki</label>
                 </div>
                 <div class="form-check">
