@@ -261,17 +261,17 @@ class Animal2 {
         $this->color = $color;
     }
 
-    // Public method untuk mengakses properti 'name'
+    
     public function getName() {
         return $this->name;
     }
 
-    // Protected method untuk mengakses properti 'age'
+    
     protected function getAge() {
         return $this->age;
     }
 
-    // Private method untuk mengakses properti 'color'
+    
     private function getColor() {
         return $this->color;
     }
@@ -280,10 +280,9 @@ class Animal2 {
 // Membuat objek dari class Animal
 $animal = new Animal2("Dog", 3, "Brown");
 
-// Akses properti dan metode
+
 echo "Name: " . $animal->name . "<br>"; // Bisa diakses karena public
-// echo "Age: " . $animal->getAge() . "<br>"; // ERROR: Tidak bisa diakses karena protected
-// echo "Color: " . $animal->getColor() . "<br>"; // ERROR: Tidak bisa diakses karena private
+
 ?>
 
 
